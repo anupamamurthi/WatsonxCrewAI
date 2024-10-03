@@ -2,3 +2,4 @@
 .venv
 outputs/
 stuff.txt
+.DS_Store
