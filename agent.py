@@ -1,5 +1,5 @@
 from crewai import Crew, Task, Agent
-from crewai_tools import SerperDevTool
+#from crewai_tools import SerperDevTool
 from langchain_ibm import WatsonxLLM
 import os
 
@@ -34,7 +34,6 @@ code_generation_llm = WatsonxLLM(
 # Create the agent
 product_owner = Agent(
     llm=llm,
-    code_generation_llm=code_generation_llm,
     role="Product Owner",
     goal="Ensure the development team delivers a product that maximizes business value and meets user needs.",
     backstory="You have a background in business analysis and project management. After transitioning into software development, you became passionate about bridging the gap between technical teams and stakeholders. Your experience in leading cross-functional teams helps you prioritize features that align with both the company's strategic goals and customer requirements.",
